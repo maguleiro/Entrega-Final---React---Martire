@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  background-image: url("../public/img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.spinner{
+  display: flex;
+  justify-content: center;
+  margin-top: +15%;
+}
+
+.base{
+  display: flex;
+  justify-content: space-around;
+  padding-top:15% ;
+}
+
+.title{
+  color: red;
+  font-family: 'Gulzar', serif;
+  font-size: 5em;
+  
+}
+
+.nav {
+  background-color: #f7f0e8;
+  height: auto; }
+
+.nav__logo {
+  font-size: 5em;
+  font-weight: 900;
+  text-decoration: none;
+  color: #414141; }
+
+.nav__logo:hover{
+  color: #414141;
+}
+
+.nav__menu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3em; }
+
+.nav__item {
+  margin-top: 35px;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #3d1e00;
+  font-family: 'PT Serif', serif;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%); }
+
+.nav__item::after {
+  content: "";
+  display: block;
+  background: black;
+  width: 70%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path .3s; }
+
+.nav__item:hover {
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  color: #3d1e00;
+}
+
+.nav__itemCart {
+  margin-top: 35px;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #3d1e00;
+  font-family: 'PT Serif', serif;
+  }
+
+  .nav__itemCart:hover{
+    cursor: pointer;
+  }
+
+.titulo{
+  font-family: 'Anton', sans-serif;
+  color: #414141;
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  text-decoration: underline;
+}
+.subTitulo{
+  font-family: 'Anton', sans-serif;
+  color: #414141;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.botonera{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.botonera button{
+  color: black;
+  background-color: orange;
+  border-radius: 5px;
+  font-size: 1.5em;
+}
+.botonera button:hover{
+  cursor: pointer;
+}
+
+.botonera p{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+.card{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.carga{
+  text-align: center;
+}
+.error{
+  display: flex;
+   margin-top: 20%;
+   justify-content: center;
+   flex-direction: column;
+}
+.error p{
+  font-family: 'Anton', sans-serif;
+  color: #414141;
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+
+}
+
+.error p a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: 'Anton', sans-serif;
+  color: #414141;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.btn-mod{
+  justify-content: center;
+  margin: 25px;
+}
+
+.subTotal{
+  margin:auto;
+  background-color: #dfb325;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 550px;
+  width: 500px;
+  font-family: 'Anton', sans-serif;
+}
+
+.subTotal h1{
+
+  margin-top: 90%;
+}

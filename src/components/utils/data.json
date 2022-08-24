@@ -1,0 +1,51 @@
+[
+	{
+		"id": 1,
+		"name": "Fernet",
+		"precio": 500,
+		"img":"/img/fernet.jpg",
+		"stock":5,
+		"discount":10,
+		"description":"description"
+	},{
+		"id":2,
+		"name":"Gin",
+		"precio": 450,
+		"img":"/img/gin.jpg",
+		"stock":8,
+		"discount":8,
+		"description":"description"
+	},{
+		"id":3,
+		"name":"Jaggermeister",
+		"precio":800,
+		"img":"/img/jagermeister.jpg",
+		"stock":10,
+		"discount":5,
+		"description":"description"
+	},{
+		"id":4,
+		"name":"Vodka",
+		"precio":650,
+		"img":"/img/vodka.jpg",
+		"stock":12,
+		"discount":15,
+		"description":"description"
+	},{
+		"id":5,
+		"name":"Sex on the beach",
+		"precio":600,
+		"img":"/img/sotb.jpg",
+		"stock":4,
+		"discount":12,
+		"description":"description"
+	},{
+		"id":6,
+		"name":"Cerveza",
+		"precio":250,
+		"img":"/img/cerveza.jpg",
+		"stock":22,
+		"discount":20,
+		"description":"description"
+	}
+]
